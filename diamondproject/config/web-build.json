@@ -1,0 +1,10 @@
+{
+  "name": "diamond",
+  "views":{
+    "layout": "layout.dd",
+    "errors": "errors.dd",
+    "home": "home.dd"
+  },
+  "homeRoute": "home",
+  "staticFileRoute": "public"
+}

@@ -1,0 +1,25 @@
+@[
+  layout:
+    layout
+---
+  model:
+    HTTPServerErrorInfo
+---
+  placeHolders:
+    ["title" : "Error - " ~ to!string(model.code)]
+]
+<b>Message:</b> @=model.code;
+
+@:if (model.message && model.message.length) {
+    &nbsp;- @=model.message;
+}
+
+@:if (model.code != 404 && model.code > 299 && model.exception) {
+	<br>
+	<b>Exception:</b> @=model.exception.toString()
+        .replace("\r", "")
+        .replace("\n", "<br>")
+        .replace(" at ", " at<br>")
+        .replace(" in ", " in<br>");
+}
+

@@ -1,0 +1,15 @@
+{
+    "name": "diamondproject",
+    "description": "A diamond website project",
+    "authors": ["Jacob Jensen"],
+    "homepage": "http://mydiamondwebsiteproject.com/",
+    "license": "http://mydiamondwebsiteproject.com/license",
+    "dependencies": {
+        "vibe-d": "~>0.7.28",
+        "diamond": "~>0.2.2"
+    },
+    "versions": ["VibeDefaultMain", "WebServer"],
+    "sourcePaths": ["core", "models", "controllers"],
+    "stringImportPaths": ["views", "config"],
+    "targetType": "executable"
+}

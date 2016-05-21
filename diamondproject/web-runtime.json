@@ -1,0 +1,11 @@
+{
+  "bindAddresses": [
+    "::1",
+    "127.0.0.1"
+  ],
+  "port": 8080,
+  "defaultHeaders": {
+    "Content-Type": "text/html; charset=UTF-8",
+	"Server": "vibe.d - Diamond MVC/Template Framework"
+  }
+}

@@ -1,0 +1,18 @@
+@*The home view*
+@[
+  layout:
+    layout
+---
+  model:
+    Home
+---
+  controller:
+    HomeController
+---
+  route:
+    home
+---
+  placeHolders:
+    ["title" : model.title]
+]
+<p> Hello World!</p>
